@@ -14,6 +14,10 @@ $gray: #444;
 
 
 body{ 
+<<<<<<< HEAD
+=======
+	border: 1px solid blue;
+>>>>>>> 26b95a9601a65b2ef4dc432c6491b502ebe471e6
 	font-family:$secondary-font; 
 }
 a{
@@ -24,6 +28,7 @@ a:hover{
 	text-decoration:underline;	
 }
 
+<<<<<<< HEAD
 /* -- Navigation components -- */
 @import 'navigation';
 
@@ -158,10 +163,34 @@ margin: 0 0 .364em;
 	
 	
 }
+=======
+
+/* -- Navigation components -- */
+@import 'navigation';
+
+
+/* -- Content -- */
+#content-main{
+	position: relative;
+	padding-top: 54px;
+
+}
+
+
+>>>>>>> 26b95a9601a65b2ef4dc432c6491b502ebe471e6
+
+
+
+
+body{background:red;}
+
+<<<<<<< HEAD
+=======
 
 
 
 
 
+>>>>>>> 26b95a9601a65b2ef4dc432c6491b502ebe471e6
 /* -- Layout Components -- */
 @import 'layout';
