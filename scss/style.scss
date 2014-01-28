@@ -30,3 +30,67 @@ a:hover{
 
 /* -- Layout Components -- */
 @import 'layout';
+
+.popular-videos{
+	background:url(../images/videos_bg.jpeg) no-repeat;
+	padding: 0 50px 50px;
+	margin-bottom: 50px;
+	background-size: cover;
+	min-height: 250px;
+	background-color: #111;
+	background-repeat: no-repeat;
+	
+	.header {		
+		width:$largest-breakpoint;
+		margin: 0 auto;
+		padding: 27px 0;
+		min-height: 18px;
+
+		.hed {
+			color:#fff;
+			text-transform: uppercase;
+			letter-spacing: 1px;
+			float: left;
+			margin: 0;
+			font-size:.875em;	
+		}
+	}
+	
+	.content {
+		margin: 0 auto;
+		width:$largest-breakpoint;
+		-webkit-transition: opacity .5s .3s;
+		-moz-transition: opacity .5s .3s;
+		-o-transition: opacity .5s .3s;
+		transition: opacity .5s .3s;
+		border:1px solid red;
+		
+		@include clearfix;		
+		
+		.story-container{
+			width: 191px;
+			float: left;
+			margin: 0 7px 0 6px;
+			max-height:none;
+			height:auto;
+			padding:0;
+			border-bottom:none;	
+			
+			&:first-child{
+				margin-left:0;	
+			}
+			
+			.story-image{
+				width:100%;
+				margin:0;
+				margin-bottom: .625em;	
+			}
+			
+			.story-image img{
+				width:100%;
+				margin-top:0;	
+			}
+		}
+	}
+}
+
