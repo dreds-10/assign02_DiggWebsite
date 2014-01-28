@@ -13,7 +13,7 @@ $blue : #0093cc;
 
 
 body{ 
-	border: 1px solid red;
+	border: 1px solid blue;
 	font-family:$secondary-font; 
 }
 a{
@@ -24,167 +24,29 @@ a:hover{
 	text-decoration:underline;	
 }
 
-.site-promo-banner{
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	background-color: #444;
-	max-height: 79px;
-	overflow: hidden;
-	z-index: 9999;
-	
-	.content {
-		max-width: 850px;
-		min-width: 320px;
-		width: 100%;
-		margin: 0 auto;
-	}
-	
-	p {
-		margin: 29px 0 30px;
-		text-align: center;
-		font-size: 1.250em;
-		color: #fff;
-	}
-	
-	a{
-		font-weight:bold;	
-	}
-}
-
-
-.digg-header{
-	position: fixed;
-	top: 79;
-	left: 0;
-	width: 100%;
-	height: 54px;
-	z-index: 999;
-	background-color: #fff;
-	border-bottom: 1px solid #d9d9d9;	
-	
-	.header-inner{
-		width:100%;
-		max-width:	$medium-breakpoint;
-		margin: 0 auto;
-		position: relative;
-		max-height: 54px;
-	}
-	
-	.logo{
-		display: block;
-		width: 80px;
-		height: 54px;
-		text-indent: 100%;
-		white-space: nowrap;
-		overflow: hidden;
-		background:url(../images/logo.png) 50% 13px no-repeat;
-		
-		background-size: 47px 30px;
-		float: left;
-		margin: 0 0 0 6px;
-		padding: 0;	
-	}
-}
-
-
-
-
-ul.nav-list{
-	margin: 0;
-	padding: 0;
-	list-style: none;
-	float: left;
-	
-	li.nav-item{
-		color: #aaa;
-		display: inline-block;
-		text-decoration: none;
-		position: relative;	
-		cursor:pointer;	
-		
-		&:hover{
-			color: $blue;	
-		}
-		
-		&.active{
-			color:#222;	
-		}	
-	}
-}
-
-
-.nav-list.nav-utility {
-	float: right;
-	margin-left: 18px;
-	width: 111px;
-	height: 54px;
-	font-size:12px;
-	
-	@include clearfix();	
-	
-	.nav-search{
-		width:18px;
-		height:18px;
-		border:1px solid red;
-		margin-top:16px;
-			
-	}
-	.nav-user{
-		color: $blue;
-		margin:19px 20px 0px 0px;
-		float:left;
-	}
-}
-
-.nav-primary .nav-item{
-	letter-spacing: 1px;
-	padding: 1.357em .750em 1.286em;
-	text-transform: uppercase;
-	font-size:14px;
-		
-}
-
-.nav-list.nav-secondary {
-	float: right;
-	font-size:14px;
-	margin-top:16px;
-
-	.nav-item:before {
-		content: '\00B7';
-		margin: 0 5px 0 0;	
-		color: #7a7a7a;
-	}
-		
-	.nav-item{
-		color: #7a7a7a;	
-	}
-	
-	&:first-child{
-			
-	}
-	
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* -- Navigation components -- */
 @import 'navigation';
+
+
+/* -- Content -- */
+#content-main{
+	position: relative;
+	padding-top: 54px;
+
+}
+
+
+
+
+
+
+body{background:red;}
+
+
+
+
+
 
 /* -- Layout Components -- */
 @import 'layout';
