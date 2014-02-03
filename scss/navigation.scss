@@ -8,6 +8,8 @@
 	overflow: hidden;
 	z-index: 9999;
 	
+	transition: all 0.3s ease;	-o-transition: all 0.3s ease;	-ms-transition: all 0.3s ease;	-moz-transition: all 0.3s ease;	-webkit-transition: all 0.3s ease;
+	
 	.content {
 		max-width: 850px;
 		min-width: 320px;
@@ -27,6 +29,16 @@
 	}
 }
 
+#close-banner{
+	width:30px;
+	height:30px;
+	line-height:30px;
+	color:#fff;
+	position:absolute;
+	top:-5px;
+	right:20px;
+	cursor:pointer;
+}
 
 .digg-header{
 	position: fixed;
@@ -37,6 +49,8 @@
 	z-index: 999;
 	background-color: #fff;
 	border-bottom: 1px solid #d9d9d9;	
+	
+	transition: all 0.3s ease;	-o-transition: all 0.3s ease;	-ms-transition: all 0.3s ease;	-moz-transition: all 0.3s ease;	-webkit-transition: all 0.3s ease;
 	
 	.header-inner{
 		width:100%;
@@ -101,9 +115,13 @@ ul.nav-list{
 	.nav-search{
 		width:18px;
 		height:18px;
-		border:1px solid red;
 		margin-top:16px;
-			
+		background:url(../images/search.jpg) no-repeat;
+		background-position:left;
+		
+		&:hover{
+			background-position:right;
+		}			
 	}
 	.nav-user{
 		color: $blue;
@@ -122,14 +140,22 @@ ul.nav-list{
 
 .nav-list.nav-secondary {
 	float: right;
-	font-size:14px;
-	margin-top:16px;
+	font-size:12px;
+	margin-top:19px;
+	margin-right:6px;
 
-	.nav-item:before {
-		content: '\00B7';
-		margin: 0 5px 0 0;	
-		color: #7a7a7a;
+	.nav-item{	
+		&:before {
+			content: '\00B7';
+			margin: 0 5px 0 0;	
+			color: #7a7a7a;
+		}
+		&:first-child:before{
+			content:"";
+		}
 	}
+	
+	
 		
 	.nav-item{
 		color: #7a7a7a;	

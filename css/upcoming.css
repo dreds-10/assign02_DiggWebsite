@@ -1,24 +1,21 @@
 /*
-Syntax error: Undefined variable: "$largest-breakpoint".
-        on line 10 of scss/layout.scss
+Syntax error: Undefined mixin 'clearfix'.
+        on line 3 of scss/upcoming.scss, in `clearfix'
+        from line 3 of scss/upcoming.scss
 
-5: 	transition: all 0.3s ease;	-o-transition: all 0.3s ease;	-ms-transition: all 0.3s ease;	-moz-transition: all 0.3s ease;	-webkit-transition: all 0.3s ease;
-6: }
-7: 
-8: .marquee{
-9: margin: 0 auto;
-10: width:$largest-breakpoint	;
-11: 
-12: }
-13: 
-14: .story-container{
-15: width: 100%;
+1: .popular-upcoming-wrap{
+2: 	
+3: 	@include clearfix;
+4: 
+5: 	width: $largest-breakpoint;
+6: margin: 0 auto;
+7: background-image: url(../images/div.png);
+8: background-repeat: repeat-y;
 
 Backtrace:
-scss/layout.scss:10
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/script/variable.rb:49:in `_perform'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/script/node.rb:40:in `perform'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:298:in `visit_prop'
+scss/upcoming.scss:3:in `clearfix'
+scss/upcoming.scss:3
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:253:in `visit_mixin'
 C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/base.rb:37:in `visit'
 C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:100:in `visit'
 C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
@@ -60,4 +57,4 @@ C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/vendor/listen/lib/listen/adapter
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined variable: \"$largest-breakpoint\".\A         on line 10 of scss/layout.scss\A \A 5: 	transition: all 0.3s ease;	-o-transition: all 0.3s ease;	-ms-transition: all 0.3s ease;	-moz-transition: all 0.3s ease;	-webkit-transition: all 0.3s ease;\A 6: }\A 7: \A 8: .marquee{\A 9: margin: 0 auto;\A 10: width:$largest-breakpoint	;\A 11: \A 12: }\A 13: \A 14: .story-container{\A 15: width: 100%;"; }
+  content: "Syntax error: Undefined mixin 'clearfix'.\A         on line 3 of scss/upcoming.scss, in `clearfix'\A         from line 3 of scss/upcoming.scss\A \A 1: .popular-upcoming-wrap{\A 2: 	\A 3: 	@include clearfix;\A 4: \A 5: 	width: $largest-breakpoint;\A 6: margin: 0 auto;\A 7: background-image: url(../images/div.png);\A 8: background-repeat: repeat-y;"; }

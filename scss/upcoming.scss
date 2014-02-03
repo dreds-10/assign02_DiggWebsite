@@ -1,0 +1,144 @@
+.popular-upcoming-wrap{
+	
+	@include clearfix;
+
+	width: $largest-breakpoint;
+margin: 0 auto;
+background-image: url(../images/div.png);
+background-repeat: repeat-y;
+background-position: 678px 0;
+}
+
+.popular-stories{
+	width: 638px;
+	padding-right: 40px;
+	float: left;
+	counter-reset: story;
+	
+	.header{
+		h2{
+			text-transform: uppercase;
+			letter-spacing: 1px;
+			margin: 0;
+			font-size: .875em;
+		}
+	}
+	
+	.story-container {
+		@include clearfix;
+		padding: 20px 0;
+		border-bottom: 1px solid #ebebeb;
+		height:auto;
+		
+		&:before{
+			counter-increment: story;
+			content: counter(story);
+			font-size: .875em;
+			width: 27px;
+			float: left;
+			padding-top: 7px;
+		}
+		
+		&:last-child{
+			border-bottom:none;
+		}
+	}
+	
+	.story-image{
+		float: left;
+		width: 191px;
+		margin-right: 20px;
+	 
+		img{
+			width:100%;
+		}
+	}
+	
+	.story-title{
+		margin-bottom: .227em;
+		font-size: 1.5em;
+	}
+	
+	
+}
+
+
+.story-container{
+
+	&:hover {
+		.story-actions{
+			opacity:1;	
+		}
+	}
+	
+
+	ul.story-actions{
+		margin:0;
+		opacity:0;
+		
+		-webkit-transition: all 160ms cubic-bezier(0,0,0.58,1);
+		-moz-transition: all 160ms cubic-bezier(0,0,0.58,1);
+		-o-transition: all 160ms cubic-bezier(0,0,0.58,1);
+		transition: all 160ms cubic-bezier(0,0,0.58,1);
+	
+		li{
+			padding: 10px;
+			list-style: none;
+			font-size: .875em;
+			display: inline-block;
+			margin-right: -2px;
+			position: relative;
+			border: 1px solid transparent;
+			border: 1px solid rgba(220,235,245,0);
+			border-radius: 4px;
+			
+			&:hover{
+				border: 1px solid rgba(220,235,245,1);
+				cursor:pointer;
+			}			
+		}
+		
+		.story-action{
+			background-repeat:no-repeat;
+			background-position:center;
+		}
+		
+		.icon-dg{background-image:url(../images/like.png);}
+		.icon-sv{background-image:url(../images/flag.png);}
+		.icon-fb{background-image:url(../images/fb.png);}
+		.icon-tw{background-image:url(../images/tw.png);}
+	}
+}
+
+
+
+
+.upcoming-stories{
+	width: 300px;
+	padding-left: 29px;
+	float: right;
+	
+	.header h2 {
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		margin: 0;
+		font-size: .875em;
+	}
+	
+	.story-container{
+		padding: 13px 0 0;
+		height:auto;
+		border-bottom:none;
+			
+		.story-title{
+			font-size: 1.063em;
+		}		
+		
+		ul.story-actions{
+			margin-left:-39px;
+			margin-top:-4px;
+		}
+	}
+}
+	
+	

@@ -1,24 +1,34 @@
 /*
-Syntax error: Undefined variable: "$largest-breakpoint".
-        on line 10 of scss/layout.scss
+Syntax error: Undefined variable: "$medium-breakpoint".
+        on line 43 of scss/navigation - Copy.scss
 
-5: 	transition: all 0.3s ease;	-o-transition: all 0.3s ease;	-ms-transition: all 0.3s ease;	-moz-transition: all 0.3s ease;	-webkit-transition: all 0.3s ease;
-6: }
-7: 
-8: .marquee{
-9: margin: 0 auto;
-10: width:$largest-breakpoint	;
-11: 
-12: }
-13: 
-14: .story-container{
-15: width: 100%;
+38: 	background-color: #fff;
+39: 	border-bottom: 1px solid #d9d9d9;	
+40: 	
+41: 	.header-inner{
+42: 		width:100%;
+43: 		max-width:	$medium-breakpoint;
+44: 		margin: 0 auto;
+45: 		position: relative;
+46: 		max-height: 54px;
+47: 	}
+48: 	
 
 Backtrace:
-scss/layout.scss:10
+scss/navigation - Copy.scss:43
 C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/script/variable.rb:49:in `_perform'
 C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/script/node.rb:40:in `perform'
 C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:298:in `visit_prop'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/base.rb:37:in `visit'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:100:in `visit'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/base.rb:53:in `map'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:320:in `visit_rule'
 C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/base.rb:37:in `visit'
 C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:100:in `visit'
 C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
@@ -60,4 +70,4 @@ C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/vendor/listen/lib/listen/adapter
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined variable: \"$largest-breakpoint\".\A         on line 10 of scss/layout.scss\A \A 5: 	transition: all 0.3s ease;	-o-transition: all 0.3s ease;	-ms-transition: all 0.3s ease;	-moz-transition: all 0.3s ease;	-webkit-transition: all 0.3s ease;\A 6: }\A 7: \A 8: .marquee{\A 9: margin: 0 auto;\A 10: width:$largest-breakpoint	;\A 11: \A 12: }\A 13: \A 14: .story-container{\A 15: width: 100%;"; }
+  content: "Syntax error: Undefined variable: \"$medium-breakpoint\".\A         on line 43 of scss/navigation - Copy.scss\A \A 38: 	background-color: #fff;\A 39: 	border-bottom: 1px solid #d9d9d9;	\A 40: 	\A 41: 	.header-inner{\A 42: 		width:100%;\A 43: 		max-width:	$medium-breakpoint;\A 44: 		margin: 0 auto;\A 45: 		position: relative;\A 46: 		max-height: 54px;\A 47: 	}\A 48: 	"; }

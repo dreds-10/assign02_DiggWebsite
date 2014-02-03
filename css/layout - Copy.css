@@ -1,21 +1,21 @@
 /*
 Syntax error: Undefined variable: "$largest-breakpoint".
-        on line 10 of scss/layout.scss
+        on line 8 of scss/layout - Copy.scss
 
-5: 	transition: all 0.3s ease;	-o-transition: all 0.3s ease;	-ms-transition: all 0.3s ease;	-moz-transition: all 0.3s ease;	-webkit-transition: all 0.3s ease;
-6: }
-7: 
-8: .marquee{
-9: margin: 0 auto;
-10: width:$largest-breakpoint	;
+3: 	padding-top: 133px;
+4: }
+5: 
+6: .marquee{
+7: margin: 0 auto;
+8: width:$largest-breakpoint	;
+9: 
+10: }
 11: 
-12: }
-13: 
-14: .story-container{
-15: width: 100%;
+12: .story-container{
+13: width: 100%;
 
 Backtrace:
-scss/layout.scss:10
+scss/layout - Copy.scss:8
 C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/script/variable.rb:49:in `_perform'
 C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/script/node.rb:40:in `perform'
 C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:298:in `visit_prop'
@@ -60,4 +60,4 @@ C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/vendor/listen/lib/listen/adapter
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined variable: \"$largest-breakpoint\".\A         on line 10 of scss/layout.scss\A \A 5: 	transition: all 0.3s ease;	-o-transition: all 0.3s ease;	-ms-transition: all 0.3s ease;	-moz-transition: all 0.3s ease;	-webkit-transition: all 0.3s ease;\A 6: }\A 7: \A 8: .marquee{\A 9: margin: 0 auto;\A 10: width:$largest-breakpoint	;\A 11: \A 12: }\A 13: \A 14: .story-container{\A 15: width: 100%;"; }
+  content: "Syntax error: Undefined variable: \"$largest-breakpoint\".\A         on line 8 of scss/layout - Copy.scss\A \A 3: 	padding-top: 133px;\A 4: }\A 5: \A 6: .marquee{\A 7: margin: 0 auto;\A 8: width:$largest-breakpoint	;\A 9: \A 10: }\A 11: \A 12: .story-container{\A 13: width: 100%;"; }
